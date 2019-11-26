@@ -14,7 +14,7 @@ end
 
    #  @user_phrase = PigLatinizer.piglatinize(params[:user_phrase])
    ins = PigLatinizer.new
-   ins.piglatinize(params[:user_phrase])
+   @user_phrase = ins.piglatinize(params[:user_phrase])
  erb :results
 
   end	  
