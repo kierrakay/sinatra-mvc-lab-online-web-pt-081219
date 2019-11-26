@@ -11,14 +11,12 @@ class App < Sinatra::Base
 end
 
   post '/piglatinize' do
-    binding.pry
+
    #  @user_phrase = PigLatinizer.piglatinize(params[:user_phrase])
    ins = PigLatinizer.new
-   
-   
-   
-
+   ins.piglatinize(params[:user_phrase])
  erb :results
+
   end	  
 
 end 
