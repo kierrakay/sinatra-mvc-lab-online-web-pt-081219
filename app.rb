@@ -21,5 +21,5 @@ end
 
 end 
 
-
+@userphrase = piglatinize(params[:user_phrase])
 
