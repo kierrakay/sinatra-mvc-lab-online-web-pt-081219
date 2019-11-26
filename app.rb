@@ -10,7 +10,7 @@ end
 
   post '/piglatinize' do
      @user_phrase = PigLatinzer.piglatinize(params[:user_phrase])
-
+binding.pry
  erb :results
   end	  
 
