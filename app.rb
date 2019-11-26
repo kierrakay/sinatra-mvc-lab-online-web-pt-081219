@@ -10,6 +10,7 @@ end
 
   post '/piglatinize' do
     # @user_phrase = piglatinize(params[:user_phrase])
+    ins = Piglatinize.new
  erb :results
   end	  
 
