@@ -12,7 +12,7 @@ end
 
   post '/piglatinize' do
     binding.pry
-     @user_phrase = PigLatinzer.piglatinize(params[:user_phrase])
+     @user_phrase = PigLatinizer.piglatinize(params[:user_phrase])
 
  erb :results
   end	  
