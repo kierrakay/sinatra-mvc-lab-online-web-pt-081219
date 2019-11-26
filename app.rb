@@ -11,8 +11,9 @@ class App < Sinatra::Base
 end
 
   post '/piglatinize' do
+    binding.pry
      @user_phrase = PigLatinzer.piglatinize(params[:user_phrase])
-binding.pry
+
  erb :results
   end	  
 
